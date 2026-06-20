@@ -16,7 +16,7 @@ const Home = () => {
           />
         </div>
 
-        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-16 pb-20">
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-16 pb-32">
           <span className="inline-block py-1 px-3 rounded-full bg-primary/20 text-primary-light font-medium text-sm mb-6 border border-primary/30 backdrop-blur-sm animate-fade-in">
             Empowering Communities
           </span>
@@ -48,11 +48,11 @@ const Home = () => {
       {/* Stats/Features Section */}
       <section className="py-20 bg-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 -mt-32 relative z-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 -mt-16 relative z-20">
             
             {/* Our Mission */}
-            <div className="glass-card p-10 text-center group hover:-translate-y-2 transition-transform duration-300">
-              <svg viewBox="0 0 100 100" className="w-24 h-24 mx-auto mb-8 text-primary group-hover:scale-110 transition-transform duration-300" fill="currentColor">
+            <div className="bg-white rounded-3xl p-10 lg:p-12 text-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] border border-slate-100 hover:-translate-y-2 transition-all duration-300 group">
+              <svg viewBox="0 0 100 100" className="w-20 h-20 mx-auto mb-8 text-primary group-hover:scale-110 transition-transform duration-500" fill="currentColor">
                 <circle cx="40" cy="20" r="8" />
                 <path d="M33 32 L47 32 L43 55 L37 55 Z" />
                 <path d="M33 34 L22 46 L29 52 L36 43" stroke="currentColor" strokeWidth="5" strokeLinecap="round" fill="none" />
@@ -61,15 +61,15 @@ const Home = () => {
                 <path d="M43 54 L52 85 L59 85 L43 60" />
                 <path d="M47 32 C 65 25, 85 40, 95 45 C 80 50, 75 60, 65 65 C 55 55, 45 50, 43 45 Z" />
               </svg>
-              <h3 className="text-3xl font-bold mb-4 text-secondary">Our Mission</h3>
-              <p className="text-slate-500 leading-relaxed text-[15px]">
-                Our mission is to be a catalyst for positive change, combining inclusive and sustainable development initiatives, research insights and policy influence to transform lives and communities
+              <h3 className="text-2xl font-bold mb-4 text-secondary tracking-tight">Our Mission</h3>
+              <p className="text-slate-500 leading-relaxed text-[15px] max-w-[280px] mx-auto">
+                Our mission is to be a catalyst for positive change, combining inclusive and sustainable development initiatives, research insights and policy influence to transform lives and communities.
               </p>
             </div>
 
             {/* Our Vision */}
-            <div className="glass-card p-10 text-center group hover:-translate-y-2 transition-transform duration-300">
-              <svg viewBox="0 0 100 100" className="w-24 h-24 mx-auto mb-8 text-secondary group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" strokeWidth="3.5">
+            <div className="bg-white rounded-3xl p-10 lg:p-12 text-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] border border-slate-100 hover:-translate-y-2 transition-all duration-300 group">
+              <svg viewBox="0 0 100 100" className="w-20 h-20 mx-auto mb-8 text-secondary group-hover:scale-110 transition-transform duration-500" fill="none" stroke="currentColor" strokeWidth="3.5">
                 <path d="M25 50 C 35 35, 65 35, 75 50 C 65 65, 35 65, 25 50 Z" />
                 <circle cx="50" cy="50" r="9" />
                 <circle cx="50" cy="50" r="3" fill="currentColor" />
@@ -78,15 +78,15 @@ const Home = () => {
                 <path d="M33 13 A 24 24 0 0 1 67 13" strokeLinecap="round" />
                 <path d="M18 45 A 35 35 0 0 0 82 45" strokeLinecap="round" />
               </svg>
-              <h3 className="text-3xl font-bold mb-4 text-secondary">Our Vision</h3>
-              <p className="text-slate-500 leading-relaxed text-[15px]">
+              <h3 className="text-2xl font-bold mb-4 text-secondary tracking-tight">Our Vision</h3>
+              <p className="text-slate-500 leading-relaxed text-[15px] max-w-[280px] mx-auto">
                 A world where diversity inspires actions to create opportunities and enhance inclusion for all people facing barriers.
               </p>
             </div>
 
             {/* Our Approach */}
-            <div className="glass-card p-10 text-center group hover:-translate-y-2 transition-transform duration-300">
-              <svg viewBox="0 0 100 100" className="w-24 h-24 mx-auto mb-8 text-secondary group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" strokeWidth="3.5">
+            <div className="bg-white rounded-3xl p-10 lg:p-12 text-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] border border-slate-100 hover:-translate-y-2 transition-all duration-300 group">
+              <svg viewBox="0 0 100 100" className="w-20 h-20 mx-auto mb-8 text-secondary group-hover:scale-110 transition-transform duration-500" fill="none" stroke="currentColor" strokeWidth="3.5">
                 <ellipse cx="50" cy="50" rx="16" ry="42" transform="rotate(30 50 50)" />
                 <ellipse cx="50" cy="50" rx="16" ry="42" transform="rotate(90 50 50)" />
                 <ellipse cx="50" cy="50" rx="16" ry="42" transform="rotate(150 50 50)" />
@@ -101,8 +101,8 @@ const Home = () => {
                 <circle cx="92" cy="50" r="5" fill="white" />
                 <circle cx="92" cy="50" r="3" fill="currentColor" />
               </svg>
-              <h3 className="text-3xl font-bold mb-4 text-secondary">Our Approach</h3>
-              <p className="text-slate-500 leading-relaxed text-[15px]">
+              <h3 className="text-2xl font-bold mb-4 text-secondary tracking-tight">Our Approach</h3>
+              <p className="text-slate-500 leading-relaxed text-[15px] max-w-[280px] mx-auto">
                 Our approach is double-edge, incorporating a business case to social development and specific solutions directed at reducing vulnerability.
               </p>
             </div>
