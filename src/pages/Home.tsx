@@ -1,5 +1,6 @@
-import { ArrowRight, Users, Target, ShieldCheck } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import heroBg from '../assets/hero.png';
 
 const Home = () => {
   return (
@@ -10,9 +11,9 @@ const Home = () => {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 to-secondary/70 z-10"></div>
           <img 
-            src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&q=80&w=2000" 
-            alt="Community gathering" 
-            className="w-full h-full object-cover"
+            src={heroBg} 
+            alt="Hero Background" 
+            className="w-full h-full object-cover transition-transform duration-[20s] hover:scale-110"
           />
         </div>
 
@@ -48,60 +49,66 @@ const Home = () => {
       {/* Stats/Features Section */}
       <section className="py-20 bg-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 -mt-16 relative z-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative z-20">
             
             {/* Our Mission */}
-            <div className="bg-white rounded-3xl p-10 lg:p-12 text-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] border border-slate-100 hover:-translate-y-2 transition-all duration-300 group">
-              <svg viewBox="0 0 100 100" className="w-20 h-20 mx-auto mb-8 text-primary group-hover:scale-110 transition-transform duration-500" fill="currentColor">
-                <circle cx="40" cy="20" r="8" />
-                <path d="M33 32 L47 32 L43 55 L37 55 Z" />
-                <path d="M33 34 L22 46 L29 52 L36 43" stroke="currentColor" strokeWidth="5" strokeLinecap="round" fill="none" />
-                <path d="M47 34 L58 13" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
-                <path d="M37 54 L25 85 L32 85 L40 60" />
-                <path d="M43 54 L52 85 L59 85 L43 60" />
-                <path d="M47 32 C 65 25, 85 40, 95 45 C 80 50, 75 60, 65 65 C 55 55, 45 50, 43 45 Z" />
-              </svg>
-              <h3 className="text-2xl font-bold mb-4 text-secondary tracking-tight">Our Mission</h3>
+            <div className="p-6 lg:p-8 text-center group cursor-default">
+              <div className="inline-block animate-float" style={{ animationDelay: '0s' }}>
+                <svg viewBox="0 0 100 100" className="w-24 h-24 mx-auto mb-8 text-primary group-hover:scale-110 transition-transform duration-500 drop-shadow-sm" fill="currentColor">
+                  <circle cx="40" cy="20" r="8" />
+                  <path d="M33 32 L47 32 L43 55 L37 55 Z" />
+                  <path d="M33 34 L22 46 L29 52 L36 43" stroke="currentColor" strokeWidth="5" strokeLinecap="round" fill="none" />
+                  <path d="M47 34 L58 13" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
+                  <path d="M37 54 L25 85 L32 85 L40 60" />
+                  <path d="M43 54 L52 85 L59 85 L43 60" />
+                  <path d="M47 32 C 65 25, 85 40, 95 45 C 80 50, 75 60, 65 65 C 55 55, 45 50, 43 45 Z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-secondary tracking-tight group-hover:text-primary transition-colors duration-300">Our Mission</h3>
               <p className="text-slate-500 leading-relaxed text-[15px] max-w-[280px] mx-auto">
                 Our mission is to be a catalyst for positive change, combining inclusive and sustainable development initiatives, research insights and policy influence to transform lives and communities.
               </p>
             </div>
 
             {/* Our Vision */}
-            <div className="bg-white rounded-3xl p-10 lg:p-12 text-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] border border-slate-100 hover:-translate-y-2 transition-all duration-300 group">
-              <svg viewBox="0 0 100 100" className="w-20 h-20 mx-auto mb-8 text-secondary group-hover:scale-110 transition-transform duration-500" fill="none" stroke="currentColor" strokeWidth="3.5">
-                <path d="M25 50 C 35 35, 65 35, 75 50 C 65 65, 35 65, 25 50 Z" />
-                <circle cx="50" cy="50" r="9" />
-                <circle cx="50" cy="50" r="3" fill="currentColor" />
-                <path d="M46 28 A 4 4 0 0 1 54 28" strokeLinecap="round" />
-                <path d="M40 21 A 14 14 0 0 1 60 21" strokeLinecap="round" />
-                <path d="M33 13 A 24 24 0 0 1 67 13" strokeLinecap="round" />
-                <path d="M18 45 A 35 35 0 0 0 82 45" strokeLinecap="round" />
-              </svg>
-              <h3 className="text-2xl font-bold mb-4 text-secondary tracking-tight">Our Vision</h3>
+            <div className="p-6 lg:p-8 text-center group cursor-default">
+              <div className="inline-block animate-float" style={{ animationDelay: '0.4s' }}>
+                <svg viewBox="0 0 100 100" className="w-24 h-24 mx-auto mb-8 text-secondary group-hover:scale-110 transition-transform duration-500 drop-shadow-sm" fill="none" stroke="currentColor" strokeWidth="3.5">
+                  <path d="M25 50 C 35 35, 65 35, 75 50 C 65 65, 35 65, 25 50 Z" />
+                  <circle cx="50" cy="50" r="9" />
+                  <circle cx="50" cy="50" r="3" fill="currentColor" />
+                  <path d="M46 28 A 4 4 0 0 1 54 28" strokeLinecap="round" />
+                  <path d="M40 21 A 14 14 0 0 1 60 21" strokeLinecap="round" />
+                  <path d="M33 13 A 24 24 0 0 1 67 13" strokeLinecap="round" />
+                  <path d="M18 45 A 35 35 0 0 0 82 45" strokeLinecap="round" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-secondary tracking-tight group-hover:text-primary transition-colors duration-300">Our Vision</h3>
               <p className="text-slate-500 leading-relaxed text-[15px] max-w-[280px] mx-auto">
                 A world where diversity inspires actions to create opportunities and enhance inclusion for all people facing barriers.
               </p>
             </div>
 
             {/* Our Approach */}
-            <div className="bg-white rounded-3xl p-10 lg:p-12 text-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] border border-slate-100 hover:-translate-y-2 transition-all duration-300 group">
-              <svg viewBox="0 0 100 100" className="w-20 h-20 mx-auto mb-8 text-secondary group-hover:scale-110 transition-transform duration-500" fill="none" stroke="currentColor" strokeWidth="3.5">
-                <ellipse cx="50" cy="50" rx="16" ry="42" transform="rotate(30 50 50)" />
-                <ellipse cx="50" cy="50" rx="16" ry="42" transform="rotate(90 50 50)" />
-                <ellipse cx="50" cy="50" rx="16" ry="42" transform="rotate(150 50 50)" />
-                <circle cx="21" cy="33" r="5" fill="white" />
-                <circle cx="21" cy="33" r="3" fill="currentColor" />
-                <circle cx="79" cy="67" r="5" fill="white" />
-                <circle cx="79" cy="67" r="3" fill="currentColor" />
-                <circle cx="67" cy="21" r="5" fill="white" />
-                <circle cx="67" cy="21" r="3" fill="currentColor" />
-                <circle cx="33" cy="79" r="5" fill="white" />
-                <circle cx="33" cy="79" r="3" fill="currentColor" />
-                <circle cx="92" cy="50" r="5" fill="white" />
-                <circle cx="92" cy="50" r="3" fill="currentColor" />
-              </svg>
-              <h3 className="text-2xl font-bold mb-4 text-secondary tracking-tight">Our Approach</h3>
+            <div className="p-6 lg:p-8 text-center group cursor-default">
+              <div className="inline-block animate-float" style={{ animationDelay: '0.8s' }}>
+                <svg viewBox="0 0 100 100" className="w-24 h-24 mx-auto mb-8 text-secondary group-hover:scale-110 transition-transform duration-500 drop-shadow-sm" fill="none" stroke="currentColor" strokeWidth="3.5">
+                  <ellipse cx="50" cy="50" rx="16" ry="42" transform="rotate(30 50 50)" />
+                  <ellipse cx="50" cy="50" rx="16" ry="42" transform="rotate(90 50 50)" />
+                  <ellipse cx="50" cy="50" rx="16" ry="42" transform="rotate(150 50 50)" />
+                  <circle cx="21" cy="33" r="5" fill="white" />
+                  <circle cx="21" cy="33" r="3" fill="currentColor" />
+                  <circle cx="79" cy="67" r="5" fill="white" />
+                  <circle cx="79" cy="67" r="3" fill="currentColor" />
+                  <circle cx="67" cy="21" r="5" fill="white" />
+                  <circle cx="67" cy="21" r="3" fill="currentColor" />
+                  <circle cx="33" cy="79" r="5" fill="white" />
+                  <circle cx="33" cy="79" r="3" fill="currentColor" />
+                  <circle cx="92" cy="50" r="5" fill="white" />
+                  <circle cx="92" cy="50" r="3" fill="currentColor" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-secondary tracking-tight group-hover:text-primary transition-colors duration-300">Our Approach</h3>
               <p className="text-slate-500 leading-relaxed text-[15px] max-w-[280px] mx-auto">
                 Our approach is double-edge, incorporating a business case to social development and specific solutions directed at reducing vulnerability.
               </p>
@@ -117,20 +124,21 @@ const Home = () => {
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="lg:w-1/2 relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-primary to-primary-light rounded-[3rem] opacity-20 blur-2xl"></div>
-              <img 
-                src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1000" 
-                alt="Our Impact" 
-                className="relative rounded-3xl shadow-2xl object-cover h-[500px] w-full"
-              />
-              <div className="absolute -bottom-8 -right-8 glass-card p-6 rounded-2xl animate-float">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-white font-bold">
-                    10+
-                  </div>
-                  <div>
-                    <p className="font-bold text-secondary">Years of</p>
-                    <p className="text-sm text-slate-500">Active Impact</p>
-                  </div>
+              <div className="overflow-hidden rounded-3xl shadow-2xl relative group">
+                <img 
+                  src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1000" 
+                  alt="Our Impact" 
+                  className="object-cover h-[500px] w-full transition-transform duration-700 group-hover:scale-110"
+                />
+              </div>
+              <div className="absolute -left-6 bottom-12 bg-white px-8 py-5 rounded-full shadow-[0_20px_40px_rgb(0,0,0,0.12)] flex items-center gap-5 animate-float" style={{ animationDelay: '1s' }}>
+                <div className="flex flex-col items-end border-r border-slate-200 pr-5">
+                  <span className="text-3xl font-extrabold text-primary leading-none mb-1">10+</span>
+                  <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Years</span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-bold text-secondary text-sm">Of Active Impact</span>
+                  <span className="text-xs text-slate-500">In our communities</span>
                 </div>
               </div>
             </div>
