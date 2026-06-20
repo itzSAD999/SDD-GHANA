@@ -1,6 +1,5 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import heroBg from '../assets/hero.png';
 
 const Home = () => {
   return (
@@ -9,10 +8,10 @@ const Home = () => {
       <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
         {/* Background Image & Overlay */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 to-secondary/70 z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-secondary/80 to-secondary/50 z-10"></div>
           <img 
-            src={heroBg} 
-            alt="Hero Background" 
+            src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&q=80&w=2000" 
+            alt="Community gathering" 
             className="w-full h-full object-cover transition-transform duration-[20s] hover:scale-110"
           />
         </div>
