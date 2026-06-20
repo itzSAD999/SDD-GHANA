@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #e91e63;
+  --color-primary-dark: #a81d84;
+  --color-primary-light: #f48fb1;
+  --color-secondary: #2d3359;
+  --color-secondary-light: #424976;
+  --color-background: #ffffff;
+  --color-surface: #f9fafb;
+  --font-sans: 'Inter', 'Roboto', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply text-slate-700 bg-background antialiased font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-secondary font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-primary hover:bg-primary-dark hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-base font-medium rounded-full text-primary bg-transparent hover:bg-primary hover:text-white hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary;
+  }
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl rounded-2xl;
+  }
+  .glass-nav {
+    @apply bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm;
+  }
+  .heading-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-dark to-primary;
+  }
+}
+
+/* Custom Utilities for Micro-animations */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
