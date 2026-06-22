@@ -14,11 +14,11 @@ const Footer = () => {
                 SDD
               </div>
               <span className="font-bold text-xl tracking-tight text-white">
-                Ghana
+                Dialogue
               </span>
             </div>
             <p className="text-sm leading-relaxed mt-4 text-slate-400">
-              Social Development and Democracy Ghana is dedicated to promoting democratic governance, sustainable development, and social justice across communities.
+              Saving and Development Dialogue is dedicated to promoting democratic governance, sustainable development, and social justice across communities.
             </p>
             <div className="flex space-x-4 pt-2">
               <a href="#" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
@@ -68,7 +68,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={20} className="text-primary shrink-0" />
-                <span>info@sddghana.org</span>
+                <span>info@sdddialogue.org</span>
               </li>
             </ul>
           </div>
@@ -94,7 +94,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-          <p>© {new Date().getFullYear()} SDD Ghana. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Saving and Development Dialogue. All rights reserved.</p>
           <div className="flex items-center gap-1">
             Made with <Heart size={14} className="text-primary fill-current mx-1" /> for social impact
           </div>

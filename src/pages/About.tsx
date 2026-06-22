@@ -5,7 +5,7 @@ const About = () => {
     <div className="pt-24 pb-20">
       {/* Header */}
       <div className="bg-secondary text-white py-20 text-center px-4">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">About SDD Ghana</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">About Saving and Development Dialogue</h1>
         <p className="text-xl text-slate-300 max-w-2xl mx-auto">
           Committed to fostering democratic governance and sustainable development in communities across Ghana.
         </p>
@@ -16,7 +16,7 @@ const About = () => {
           <div>
             <h2 className="text-3xl font-bold text-secondary mb-6">Our Story</h2>
             <p className="text-slate-600 mb-4 leading-relaxed">
-              Social Development and Democracy (SDD) Ghana was founded with a clear mandate: to bridge the gap between policy formulation and grassroots implementation. We believe that true democracy thrives when citizens are actively engaged in the governance process.
+              Saving and Development Dialogue (SDD) was founded with a clear mandate: to bridge the gap between policy formulation and grassroots implementation. We believe that true democracy thrives when citizens are actively engaged in the governance process.
             </p>
             <p className="text-slate-600 leading-relaxed">
               Over the years, we have partnered with local communities, international organizations, and government agencies to deliver impactful programs that empower the marginalized, promote transparency, and build sustainable livelihoods.

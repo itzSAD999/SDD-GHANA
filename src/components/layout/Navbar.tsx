@@ -37,7 +37,7 @@ const Navbar = () => {
                 SDD
               </div>
               <span className={`font-bold text-xl tracking-tight ${scrolled ? 'text-secondary' : 'text-white'}`}>
-                Ghana
+                Dialogue
               </span>
             </Link>
           </div>

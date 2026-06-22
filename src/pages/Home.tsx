@@ -21,8 +21,8 @@ const Home = () => {
             Empowering Communities
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight max-w-4xl mx-auto">
-            Social Development & <br/>
-            <span className="text-primary">Democracy Ghana</span>
+            Saving & Development <br/>
+            <span className="text-primary">Dialogue</span>
           </h1>
           <p className="text-lg md:text-xl text-slate-200 mb-10 max-w-2xl mx-auto leading-relaxed">
             Dedicated to promoting democratic governance, sustainable development, and social justice across communities in Ghana and beyond.
@@ -148,7 +148,7 @@ const Home = () => {
                 Driving Sustainable Change Through <span className="heading-gradient">Democratic Action</span>
               </h3>
               <p className="text-slate-600 text-lg mb-6 leading-relaxed">
-                SDD Ghana is a non-governmental organization committed to fostering a society where democracy thrives and sustainable development is a reality for all. We bridge the gap between policy and community action.
+                Saving and Development Dialogue (SDD) is a non-governmental organization committed to fostering a society where democracy thrives and sustainable development is a reality for all. We bridge the gap between policy and community action.
               </p>
               <p className="text-slate-600 mb-8 leading-relaxed">
                 Through research, advocacy, and capacity building, we empower citizens to actively participate in governance processes and hold institutions accountable.
